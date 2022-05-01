@@ -1,0 +1,34 @@
+.main_project {
+  width: 80vh;
+  margin: auto;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 7vh;
+  border-radius: 10px;
+  background-color: white;
+}
+.main_project h2{
+    font-family: 'Commissioner', sans-serif;
+}
+
+.main_projectm, p{
+    font-family: 'Commissioner', sans-serif;
+    color: grey;
+}
+.main_project :nth-child(1){
+    margin: 2vh;
+ }
+.main_project :nth-child(2){
+   margin: 2vh;
+}
+.main_project :nth-child(3){
+   margin: 2vh;
+}
+
+@media (max-width: 740px){
+   .main_project{
+       width: 45vh;
+   }
+}

@@ -1,0 +1,24 @@
+.header_container{
+
+    position: absolute;
+    margin: 3vh;
+    padding: 3vh;
+    width: 90%;
+
+}
+.crowdfund{
+
+    width: 20vh;
+    height: 30px;
+
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+

@@ -1,0 +1,12 @@
+.icon_hamb{
+    display: none;
+}
+
+@media (max-width:740px){
+    .icon_hamb{
+        display: block;
+        height: 25px;
+    }
+}
+
+

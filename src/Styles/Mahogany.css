@@ -1,0 +1,72 @@
+.mahogany_project{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+}
+
+.principal_mahogany{
+    font-family: 'Commissioner', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.principal_mahogany h3{
+    color: rgb(217, 217, 217);
+}
+
+.p_mahogany{
+   padding-left: 2vh;
+}
+
+.principal_mahogany span{
+    color: rgb(200, 200, 200);
+}
+
+.div_mahogany_project{
+    display: flex;
+    justify-content: space-between;
+}
+
+.span_mahogany{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+}
+.span_mahogany p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.left_number span{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn_mahogany{
+    padding: 1.5vh;
+    border-radius: 25px;
+    font-family: 'Commissioner', sans-serif;
+    border: none;
+    background-color: rgb(198, 198, 198);
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 740px){
+
+    .principal_mahogany{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div_mahogany_project{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    
+    }
+    
+     }

@@ -1,0 +1,75 @@
+.section_backed{
+    width: 80vh;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 7vh;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.divs_containers{
+    display: flex;
+}
+hr{
+    height: 6vh;
+    margin-top: 3.5vh;
+}
+
+.divs_containers div{
+    margin: 3vh;
+}
+
+.section_backed span{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.section_backed p {
+    font-family: 'Commissioner', sans-serif;
+    color: grey;
+}
+
+.div4{
+    background-color: rgb(233, 233, 233);
+    height: 12px;
+    border-radius: 10px;
+    width: 70vh;
+    margin: 2vh;
+}
+
+.div4 div{
+  border-radius: 10px;
+  background-color: hsl(176, 50%, 47%);
+  height: 11px;
+  width: 55vh;
+
+}
+
+@media (max-width: 740px){
+    .section_backed{
+        width: 45vh;
+    }
+    .divs_containers{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div4{
+        width: 40vh;
+    }
+
+    .div4 div{
+        width: 30vh;
+    }
+    hr{
+        height: 1px;
+        width: 10vh;
+        margin: auto;
+    }
+}

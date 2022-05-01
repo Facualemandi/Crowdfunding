@@ -1,0 +1,18 @@
+.ul_container_nav{
+    display: flex;
+    list-style: none;
+    width: 60vh;
+}
+.ul_container_nav ,li{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+@media (max-width:740px){
+    .ul_container_nav ,li{
+        display: none;
+    }
+}

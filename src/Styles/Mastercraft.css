@@ -1,0 +1,95 @@
+.mastercraft_container {
+  width: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 7vh;
+  border-radius: 10px;
+  background-color: white;
+}
+.mastercraft_container .logoMastercraft {
+  position: relative;
+  bottom: 3vh;
+}
+
+.mastercraft_container h1 {
+    font-family: 'Commissioner', sans-serif;
+     margin-bottom: 1.5vh;
+}
+
+.mastercraft_container p{
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+}
+
+.div_container_mastercraft{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+    width: 70vh;
+}
+.div_container_mastercraft button{
+    border-radius: 50px;
+    border: none;
+    width: 20vh;
+}
+
+.button_one_project{
+    background-color: hsl(176, 50%, 47%);
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.button_two_boomark{
+    cursor: pointer;
+     font-weight: bold;
+     color: gray;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.button_two_boomark p {
+    margin-right: 3vh;
+  
+}
+
+
+
+
+@media (max-width: 740px){
+   .mastercraft_container{
+       width: 45vh;
+   }
+   .mastercraft_container h1{
+       font-size: 21px;
+   }
+   .mastercraft_container p{
+       font-size: 13px;
+       padding: 1vh;
+   }
+
+   .div_container_mastercraft{
+       width: 35vh;
+       display: flex;
+       justify-content: center;
+   }
+   .div_container_mastercraft .button_two_boomark{
+           background-color: rgb(255, 255, 255);
+           width: 8vh;
+   }
+
+   .boomark{
+       margin-left: 1vh;
+   }
+   .button_two_boomark p{
+       display: none;
+   }
+
+}
+
