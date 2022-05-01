@@ -6,13 +6,13 @@ import ProjectModal from "./ProjectModal";
 
 
 
-const Modal = ({isCloseM}) => {
+const Modal = ({isCloseM, exitoMod, onValue, setOnValue, error}) => {
       
       return ReactDom.createPortal(
             <div className="modalBackground">
                   <div className="container_modal">
                      <ProjectModal isCloseM={isCloseM}/>
-                     <NoReward/>
+                     <NoReward exitoMod={exitoMod} onValue={onValue} setOnValue={setOnValue}/>
                   </div>
             </div>,
             document.getElementById('modal')

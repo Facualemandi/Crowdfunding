@@ -3,7 +3,13 @@
     border-radius: 10px;
     margin: 2vh;
     padding: 2vh;
+    cursor: pointer;
 }
+
+.container-active{
+    background-color: rgb(238, 255, 238);
+}
+
 .sectionContainer_noReward p{
   padding-top: 1vh;
 }
@@ -23,7 +29,7 @@
 }
 
 .hrModal{
-    height: 1px;
+    height: 0.1px;
 }
 
 .totalPiedgeNoReward{

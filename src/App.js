@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import  Modal  from "./Components/Modal";
+import React, { useState } from "react";
+import Modal from "./Components/Modal";
 import Backed from "./Components/Backed";
 import ContentProject from "./Components/ContentProject";
 import ImageFondo from "./Components/ImageFondo";
@@ -7,7 +7,7 @@ import ItemsProject from "./Components/ItemsProject";
 import Mahogany from "./Components/Mahogany";
 import Mastercraft from "./Components/Mastercraft";
 import Nav from "./Components/Nav";
-
+import Exito from "./Components/Exito";
 
 const buyItems = [
   {
@@ -29,26 +29,30 @@ const buyItems = [
   },
 ];
 
-
-
 function App() {
-
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
+  const [exitoModal, setExitoModal] = useState(false);
+  const [onValue, setOnValue] = useState("");
 
   const isOpen = () => {
-    setOpenModal(true)
-  } 
-
+    setOpenModal(true);
+  };
   const isCloseM = () => {
-    setOpenModal(false)
-  } 
-
+    setOpenModal(false);
+    setExitoModal(false);
+  };
+  const exitoMod = () => {
+    setOpenModal(false);
+    if (onValue) {
+      setExitoModal(true);
+    } 
+  };
 
   return (
     <>
       <Nav />
       <ImageFondo />
-      <Mastercraft  isOpen={isOpen} />
+      <Mastercraft isOpen={isOpen} />
       <Backed />
       <ContentProject>
         {buyItems.map((el) => (
@@ -64,13 +68,18 @@ function App() {
         ))}
         <Mahogany />
       </ContentProject>
-    
+
       {openModal && (
-          <Modal isCloseM={isCloseM}>
-             
-         </Modal>
+        <Modal
+          isCloseM={isCloseM}
+          exitoMod={exitoMod}
+          onValue={onValue}
+          setOnValue={setOnValue}
+    
+        />
       )}
 
+      {exitoModal && <Exito isCloseM={isCloseM} />}
     </>
   );
 }
