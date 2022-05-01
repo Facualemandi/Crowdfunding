@@ -7,7 +7,7 @@
 }
 
 .container-active{
-    background-color: rgb(238, 255, 238);
+   border: 2px solid hsl(176, 50%, 47%);
 }
 
 .sectionContainer_noReward p{

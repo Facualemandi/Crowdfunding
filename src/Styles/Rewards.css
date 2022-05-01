@@ -5,6 +5,9 @@
     padding: 2vh;
     cursor: pointer;
 }
+.bamboo-active{
+    border: 2px solid hsl(176, 50%, 47%);
+}
 
 .containerTop{
     display: flex;
