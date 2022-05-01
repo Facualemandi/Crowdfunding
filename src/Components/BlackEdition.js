@@ -1,12 +1,25 @@
 import React from "react";
+import '../Styles/BlackEdition.css'
 
-const BlackEdition = ({ blackEdition, setBlackEdition, setItemsReward,setPiedgeNoReward }) => {
-    
+const BlackEdition = ({
+  blackEdition,
+  setBlackEdition,
+  setItemsReward,
+  setPiedgeNoReward,
+  onValue,
+  setOnValue,
+  sendPiedge,
+  
+}) => {
   const isBlackEdit = () => {
     setBlackEdition(true);
     setItemsReward(false);
     setPiedgeNoReward(false);
   };
+
+  const changeBlackEdition = (e) => {
+    setOnValue(e.target.value)
+  }
 
   return (
     <>
@@ -36,8 +49,13 @@ const BlackEdition = ({ blackEdition, setBlackEdition, setItemsReward,setPiedgeN
             <>
               <hr className="hrModal" />
               <div className="totalPiedgeNoReward">
-                <input type="number" placeholder="Piedge" />
-                <button> Continue </button>
+                <input
+                  type="number"
+                  placeholder="Piedge"
+                  value={onValue}
+                  onChange={changeBlackEdition}
+                />
+                <button onClick={() => sendPiedge(75)}> Continue </button>
               </div>
             </>
           )}

@@ -51,6 +51,13 @@ function App() {
     } 
   };
 
+  const sendPiedge = (num) => {
+    setOpenModal(false)
+    if(onValue >= num){
+      setExitoModal(true)
+    }
+  }
+
   return (
     <>
       <Nav />
@@ -67,6 +74,7 @@ function App() {
             number={el.number}
             left={el.left}
             valueBtn={el.valueBtn}
+            isOpen={isOpen}
           />
         ))}
         <Mahogany />
@@ -76,6 +84,7 @@ function App() {
         <Modal
           isCloseM={isCloseM}
           exitoMod={exitoMod}
+          sendPiedge={sendPiedge}
           onValue={onValue}
           setOnValue={setOnValue}
           piedgeNoReward={piedgeNoReward}
@@ -84,6 +93,7 @@ function App() {
           setItemsReward={setItemsReward}
           blackEdition={blackEdition}
           setBlackEdition={setBlackEdition}
+          isOpen={isOpen}
     
         />
       )}

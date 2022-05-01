@@ -17,6 +17,8 @@ const Modal = ({
   setItemsReward,
   blackEdition,
   setBlackEdition,
+  sendPiedge,
+  isOpen,
 }) => {
   return ReactDom.createPortal(
     <div className="modalBackground">
@@ -36,6 +38,9 @@ const Modal = ({
           setItemsReward={setItemsReward}
           setPiedgeNoReward={setPiedgeNoReward}
           setBlackEdition={setBlackEdition}
+          sendPiedge={sendPiedge}
+          onValue={onValue}
+          setOnValue={setOnValue}
         />
 
         <BlackEdition
@@ -43,6 +48,10 @@ const Modal = ({
         setBlackEdition={setBlackEdition}
         setItemsReward={setItemsReward}
         setPiedgeNoReward={setPiedgeNoReward}
+        onValue={onValue}
+        setOnValue={setOnValue}
+        sendPiedge={sendPiedge}
+        isOpen={isOpen}
         />
 
 
