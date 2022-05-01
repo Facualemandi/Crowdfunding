@@ -23,6 +23,10 @@
   border: 1px solid white;
   background-color: white;
 }
+.container_exito_modal h3 {
+  color: black;
+
+}
 .container_exito_modal img{
   margin: 1vh;
 }

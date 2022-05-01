@@ -37,3 +37,29 @@
    margin-left: 5px;
    font-size: 15px;
 }
+
+
+@media (max-width: 740px){
+    .container_modal{
+        width: 50vh;
+    }
+    .containerTop{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .containerTop h2{
+        margin: 1vh;
+ 
+    }
+    .containerTop p{
+        margin: 1vh;
+    }
+    .parrafo_reward{
+        margin: 1vh;
+    }
+
+    .span_reward{
+        display: none;
+    }
+}

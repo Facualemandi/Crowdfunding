@@ -25,7 +25,7 @@ const BlackEdition = ({
     <>
       <section>
         <div
-          className={`rewardsTotal ${blackEdition && "bamboo-active"}`}
+          className={`blackEdition ${blackEdition && "black-active"}`}
           onClick={isBlackEdit}
         >
           <div className="containerTop">

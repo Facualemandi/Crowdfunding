@@ -48,13 +48,17 @@ function App() {
     setOpenModal(false);
     if (onValue) {
       setExitoModal(true);
-    } 
+    }else{
+      
+    }
   };
 
   const sendPiedge = (num) => {
     setOpenModal(false)
     if(onValue >= num){
       setExitoModal(true)
+    }else{
+      alert('El número no puede ser menor a ' + num)
     }
   }
 

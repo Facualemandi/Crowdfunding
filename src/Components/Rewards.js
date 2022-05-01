@@ -35,7 +35,7 @@ const Rewards = ({
             </span>
           </div>
 
-          <div>
+          <div className="parrafo_reward">
             <p>
               You get an ergonomic stand made of natural bamboo. You've helped
               us launch our promotional campaign, and you’ll be added to a
@@ -53,7 +53,7 @@ const Rewards = ({
             </>
           )}
         </div>
-        )
+        
       </section>
     </>
   );

@@ -32,3 +32,10 @@
     height: 3vh;
     cursor: pointer;
 }
+
+
+@media (max-width: 740px){
+    .container_modal{
+        width: 50vh;
+    }
+}
