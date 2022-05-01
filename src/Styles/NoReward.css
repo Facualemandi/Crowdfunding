@@ -1,0 +1,50 @@
+.sectionContainer_noReward{
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    margin: 2vh;
+    padding: 2vh;
+}
+.sectionContainer_noReward p{
+  padding-top: 1vh;
+}
+
+.noReward{
+    display: flex;
+}
+
+.noReward h3{
+    padding-left: 1vh;
+    color: black;
+    font-family: 'Commissioner', sans-serif;
+}
+.chexbox_noReward{
+    height: 2.5vh;
+    width: 2.5vh;
+}
+
+.hrModal{
+    height: 1px;
+}
+
+.totalPiedgeNoReward{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.totalPiedgeNoReward input{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.totalPiedgeNoReward button{
+    width: 15vh;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+.modalBackground{
+    background: rgba(32, 35, 41,.8);
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif
+}
+
+.container_modal{
+    background-color: white;
+    border-radius: 8px;
+    width: 80vh;
+}
+
+.closeModal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconCloseModal{
+    background-color: rgb(232, 232, 232);
+    border-radius: 100%;
+    margin-right: 2vh;
+    margin-top: 1.5vh;
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}

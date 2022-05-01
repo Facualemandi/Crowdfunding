@@ -4,7 +4,7 @@ import logoMastercraft from '../Images/logo-mastercraft.svg'
 import iconBookmark from '../Images/icon-bookmark.svg'
 
 
-const Mastercraft = () => {
+const Mastercraft = ({isOpen}) => {
   return (
 
      <>
@@ -14,7 +14,7 @@ const Mastercraft = () => {
                <p> A beautiful Handcrafted monitor stand to reduce neck and eye strain </p>
               
               <div className='div_container_mastercraft'>
-                <button className='button_one_project'>Back This Project</button>
+                <button className='button_one_project' onClick={isOpen} >Back This Project</button>
 
                 <button className='button_two_boomark'>
                     <img src={iconBookmark} alt='Boomark' className='boomark'/>

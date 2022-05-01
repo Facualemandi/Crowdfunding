@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useState} from "react";
+import  Modal  from "./Components/Modal";
 import Backed from "./Components/Backed";
 import ContentProject from "./Components/ContentProject";
 import ImageFondo from "./Components/ImageFondo";
@@ -7,13 +8,14 @@ import Mahogany from "./Components/Mahogany";
 import Mastercraft from "./Components/Mastercraft";
 import Nav from "./Components/Nav";
 
+
 const buyItems = [
   {
     name: "Bamboo Stand",
     price: "Pledge $25 or more",
     text: "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
     number: "101",
-    left:"left",
+    left: "left",
     valueBtn: "Select Reward",
   },
 
@@ -22,32 +24,53 @@ const buyItems = [
     price: "Pledge $75 or more",
     text: "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
     number: "64",
-    left:"left",
+    left: "left",
     valueBtn: "Select Reward",
   },
 ];
 
+
+
 function App() {
+
+  const [openModal, setOpenModal] = useState(false)
+
+  const isOpen = () => {
+    setOpenModal(true)
+  } 
+
+  const isCloseM = () => {
+    setOpenModal(false)
+  } 
+
+
   return (
     <>
       <Nav />
       <ImageFondo />
-      <Mastercraft />
+      <Mastercraft  isOpen={isOpen} />
       <Backed />
       <ContentProject>
         {buyItems.map((el) => (
           <ItemsProject
-           key={el.name}
-           name={el.name}
-           price={el.price}
-           text={el.text}
-           number={el.number}
-           left={el.left}
-           valueBtn={el.valueBtn}
-           />
+            key={el.name}
+            name={el.name}
+            price={el.price}
+            text={el.text}
+            number={el.number}
+            left={el.left}
+            valueBtn={el.valueBtn}
+          />
         ))}
-        <Mahogany/>
+        <Mahogany />
       </ContentProject>
+    
+      {openModal && (
+          <Modal isCloseM={isCloseM}>
+             
+         </Modal>
+      )}
+
     </>
   );
 }

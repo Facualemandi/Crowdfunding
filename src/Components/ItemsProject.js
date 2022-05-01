@@ -2,6 +2,8 @@ import React from 'react'
 import '../Styles/ItemsProject.css'
 
 const ItemsProject = ({name, price, text, number, left, valueBtn}) => {
+
+    
   return (
       <>
           <div className='totalItems_project'>
