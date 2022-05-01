@@ -30,8 +30,10 @@ const buyItems = [
 ];
 
 function App() {
+  const [totalItems, setTotalItems] = useState(buyItems)
   const [openModal, setOpenModal] = useState(false);
   const [exitoModal, setExitoModal] = useState(false);
+  // const [exitoModal, setExitoModal] = useState(false);
   const [onValue, setOnValue] = useState("");
 
   const isOpen = () => {
@@ -75,6 +77,7 @@ function App() {
           exitoMod={exitoMod}
           onValue={onValue}
           setOnValue={setOnValue}
+          totalItems={totalItems}
     
         />
       )}
