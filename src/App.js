@@ -36,8 +36,9 @@ function App() {
   const [itemsReward, setItemsReward] = useState(false);
   const [blackEdition, setBlackEdition] = useState(false)
   const [onValue, setOnValue] = useState("");
+  const [error, setError] = useState(false)
 
- const [openMenuList, setOpenMenuList] = useState(false)
+  const [openMenuList, setOpenMenuList] = useState(false)
 
   const isOpen = () => {
     setOpenModal(true);
@@ -60,7 +61,8 @@ function App() {
     if(onValue >= num){
       setExitoModal(true)
     }else{
-      alert('El número no puede ser menor a ' + num)
+      setError(true)
+      setOpenModal(true);
     }
   }
 
@@ -103,6 +105,7 @@ function App() {
           blackEdition={blackEdition}
           setBlackEdition={setBlackEdition}
           isOpen={isOpen}
+          error={error}
     
         />
       )}

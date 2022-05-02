@@ -38,6 +38,12 @@
    font-size: 15px;
 }
 
+.error{
+    color: red;
+    border-radius: 15px;
+    background-color: rgb(253, 231, 231);
+}
+
 
 @media (max-width: 740px){
     .container_modal{

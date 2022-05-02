@@ -19,6 +19,7 @@ const Modal = ({
   setBlackEdition,
   sendPiedge,
   isOpen,
+  error,
 }) => {
   return ReactDom.createPortal(
     <div className="modalBackground">
@@ -41,6 +42,7 @@ const Modal = ({
           sendPiedge={sendPiedge}
           onValue={onValue}
           setOnValue={setOnValue}
+          error={error}
         />
 
         <BlackEdition
@@ -52,6 +54,7 @@ const Modal = ({
         setOnValue={setOnValue}
         sendPiedge={sendPiedge}
         isOpen={isOpen}
+        error={error}
         />
 
 

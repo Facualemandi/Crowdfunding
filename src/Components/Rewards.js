@@ -8,6 +8,7 @@ const Rewards = ({
   sendPiedge,
   onValue,
   setOnValue,
+  error,
 }) => {
   const activeRewards = () => {
     setItemsReward(true);
@@ -49,6 +50,7 @@ const Rewards = ({
               <div className="totalPiedgeNoReward">
                 <span className="enterPiedgeBamboo"> Enter Your Piedge </span>
                 <input type="number" placeholder="Piedge" value={onValue}  onChange={changeBamboo}/>
+                 {error ? <p className="error">Piedge $25 or more.</p> : <p></p>}
                 <button onClick={() => sendPiedge(25)}> Continue </button>
               </div>
             </>
