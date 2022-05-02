@@ -49,6 +49,7 @@ const BlackEdition = ({
             <>
               <hr className="hrModal" />
               <div className="totalPiedgeNoReward">
+              <span className="enterPiedgeBlack"> Enter Your Piedge </span>
                 <input
                   type="number"
                   placeholder="Piedge"

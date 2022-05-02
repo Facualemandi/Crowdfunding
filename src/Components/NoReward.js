@@ -43,8 +43,9 @@ const NoReward = ({
             <hr className="hrModal" />
 
             <div className="totalPiedgeNoReward">
+              <span className="enterPiedge"> Enter Your Piedge </span>
               <input
-                type="number"
+                type='number'
                 placeholder="Piedge"
                 onChange={onChangeValue}
                 value={onValue}

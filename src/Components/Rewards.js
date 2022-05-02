@@ -47,6 +47,7 @@ const Rewards = ({
             <>
               <hr className="hrModal" />
               <div className="totalPiedgeNoReward">
+                <span className="enterPiedgeBamboo"> Enter Your Piedge </span>
                 <input type="number" placeholder="Piedge" value={onValue}  onChange={changeBamboo}/>
                 <button onClick={() => sendPiedge(25)}> Continue </button>
               </div>

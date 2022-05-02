@@ -63,3 +63,24 @@
         display: none;
     }
 }
+
+@media (max-width: 740px){
+    .totalPiedgeNoReward{
+        display: flex;
+        flex-direction: column;
+        padding: 7vh;
+    }
+
+    .totalPiedgeNoReward span{
+        margin: 1vh;
+    }
+    .totalPiedgeNoReward input{
+        margin: 1vh;
+        padding: 1vh;
+    }
+    .totalPiedgeNoReward button{
+        padding: 1vh;
+        margin: 1vh;
+        
+    }
+}

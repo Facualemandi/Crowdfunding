@@ -15,6 +15,7 @@
 .container_modal{
     background-color: white;
     border-radius: 8px;
+    padding: 3vh;
     width: 80vh;
 }
 

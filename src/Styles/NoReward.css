@@ -35,7 +35,12 @@
 .totalPiedgeNoReward{
     margin-top: 3vh;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+    height: 55px;
+}
+.enterPiedgeBamboo {
+    color: grey;
 }
 
 .totalPiedgeNoReward input{
@@ -45,7 +50,8 @@
 }
 .totalPiedgeNoReward button{
     width: 15vh;
-    border-radius: 20px;
+    height: 45px;
+    border-radius: 30px;
     border: 1px solid grey;
     background-color: hsl(176, 50%, 47%);
     color: white;
@@ -53,4 +59,30 @@
     font-weight: bold;
     border: none;
     cursor: pointer;
+}
+
+.enterPiedge{
+    color: rgb(194, 194, 194);;
+}
+
+
+@media (max-width: 740px){
+    .totalPiedgeNoReward{
+        display: flex;
+        flex-direction: column;
+        padding: 7vh;
+    }
+
+    .totalPiedgeNoReward span{
+        margin: 1vh;
+    }
+    .totalPiedgeNoReward input{
+        margin: 1vh;
+        padding: 1vh;
+    }
+    .totalPiedgeNoReward button{
+        padding: 1vh;
+        margin: 1vh;
+        
+    }
 }
