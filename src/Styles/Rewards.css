@@ -73,6 +73,10 @@
     .span_reward{
         display: none;
     }
+
+    .error{
+        margin-top: 3vh;
+    }
 }
 
 @media (max-width: 740px){
