@@ -60,9 +60,11 @@ function App() {
     setOpenModal(false)
     if(onValue >= num){
       setExitoModal(true)
+      setError(false)
     }else{
       setError(true)
-      setOpenModal(true);
+      setExitoModal(false)
+      setOpenModal(true)
     }
   }
 
