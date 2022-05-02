@@ -42,6 +42,11 @@
     color: red;
     border-radius: 15px;
     background-color: rgb(253, 231, 231);
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 

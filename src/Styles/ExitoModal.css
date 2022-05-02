@@ -46,3 +46,10 @@
   font-weight: bold;
   color: white;
 }
+
+
+@media (max-width: 740px){
+    .container_exito_modal{
+       width: 35vh;
+    }
+}

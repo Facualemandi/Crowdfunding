@@ -56,9 +56,9 @@ const BlackEdition = ({
                   value={onValue}
                   onChange={changeBlackEdition}
                 />
-                {error ? <p className="error">Piedge $75 or more.</p> : <p></p>}
                 <button onClick={() => sendPiedge(75)}> Continue </button>
               </div>
+              {error ? <p className="error">Piedge $75 or more.</p> : <p></p>}
             </>
           )}
         </div>
