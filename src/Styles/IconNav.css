@@ -1,12 +1,17 @@
 .icon_hamb{
     display: none;
 }
+.hr{
+    display: none;
+}
 
 @media (max-width:740px){
     .icon_hamb{
         display: block;
         height: 25px;
+        cursor: pointer;
     }
+
 }
 
 

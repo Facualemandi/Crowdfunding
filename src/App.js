@@ -37,6 +37,8 @@ function App() {
   const [blackEdition, setBlackEdition] = useState(false)
   const [onValue, setOnValue] = useState("");
 
+ const [openMenuList, setOpenMenuList] = useState(false)
+
   const isOpen = () => {
     setOpenModal(true);
   };
@@ -64,7 +66,10 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <Nav
+      openMenuList={openMenuList}
+      setOpenMenuList={setOpenMenuList}
+       />
       <ImageFondo />
       <Mastercraft isOpen={isOpen} />
       <Backed />

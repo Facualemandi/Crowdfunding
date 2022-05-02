@@ -5,14 +5,14 @@ import IconNav from './IconNav'
 import NavUl from './NavUl'
 
 
-const Nav = () => {
+const Nav = ({openMenuList, setOpenMenuList}) => {
   return (
     <>
      <header className='header_container'>
          <nav className='nav_container'>
              <img alt='crowdfund' src={logo} className='crowdfund'/>
-               <NavUl/>
-               <IconNav/>
+               <NavUl openMenuList={openMenuList}/>
+               <IconNav setOpenMenuList={setOpenMenuList} openMenuList={openMenuList}/>
          </nav>
      </header>
       

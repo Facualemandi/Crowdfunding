@@ -11,8 +11,37 @@
   color: white;
 }
 
+
 @media (max-width:740px){
     .ul_container_nav ,li{
         display: none;
+    }
+    .close_menu{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px 1px black;
+        position: absolute;
+        z-index: 100;
+        left: 0px;
+        transform: translate(0, -270px);
+    }
+
+    .is-active{
+        transform: translate(0, 30px);
+    }
+
+
+    .close_menu , li{
+        margin: 1vh;
+        padding: 1vh;
+        width: 40vh;
+        display: block;
+        color: black;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 }

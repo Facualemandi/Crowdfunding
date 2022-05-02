@@ -56,7 +56,6 @@
 }
 .button_two_boomark p {
     margin-right: 3vh;
-  
 }
 
 
@@ -65,6 +64,8 @@
 @media (max-width: 740px){
    .mastercraft_container{
        width: 45vh;
+       margin-top: 2vh;
+      
    }
    .mastercraft_container h1{
        font-size: 21px;
